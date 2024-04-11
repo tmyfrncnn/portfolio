@@ -105,6 +105,66 @@ a:link, a:visited {
   margin-top: 1%;
 }
 
+.works-section + hr {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.works-section__title {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.works-section__cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+}
+
+/* This is for the last div that contains the see more button */
+.works-section__cards-container > div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.works-section__card {
+  flex-basis: 20%;
+}
+
+.works-section__card img{
+  width: 100%;
+}
+
+.works-section__card-details {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+/* Removes built in margin from elements */
+.works-section__card-details * {
+  margin: unset;
+}
+
+#works-btn-more {
+  padding: 10px 50px 10px 50px;
+  border-radius: 30px;
+  border: 1px solid black;
+  font-weight:800;
+  text-align: center;
+  font-family: inherit;
+  background-color: #FAF9F6;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+#works-btn-more:hover {
+  background-color: #010203;
+  color: #FAF9F6;
+}
+
+/* 
 .works {
   display: flex;
   flex-direction: column;
@@ -122,7 +182,6 @@ a:link, a:visited {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* align-items: center; */
   align-items: flex-start;
 }
 
@@ -202,7 +261,7 @@ a:link, a:visited {
 .column-r2 button:hover {
   background-color: #010203;
   color: #FAF9F6;
-}
+} */
 
 .socials {
   display: flex;
